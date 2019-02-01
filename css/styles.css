@@ -1,3 +1,6 @@
+
+
+/********* Nav menu ************/
 ul {
   margin: 0;
   padding: 0;
@@ -18,7 +21,8 @@ li a,
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -47,4 +51,50 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+/********* Classes / main content ************/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.category {
+  border: 1px solid gray;
+  border-radius: 50px;
+  display: inline-block;
+  width: 300px;
+  max-width: 300px;
+  height: 300px;
+  max-height: 300px;
+  padding: 25px;
+}
+
+.categoryImage {
+  display: block;
+  width: 90%;
+  margin: auto; 
+}
+
+.category p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.productBox {
+  border: 1px solid gray;
+  border-radius: 50px;
+  display: inline-block;
+  width: 400px;
+  max-width: 400px;
+  height: 400px;
+  max-height: 400px;
+  padding: 25px;
+}
+
+.img {
+  display: block;
+  width: 60%;
+  margin: auto;
 }
