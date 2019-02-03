@@ -1,85 +1,64 @@
+/*********************************************/
+/********* Header and nav bar ****************/
+/*********************************************/
 
-
-/********* Nav menu ************/
-ul {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a,
-.dropbtn {
-  display: inline-block;
-  color: white;
+h1 {
   text-align: center;
-  padding: 16px;
-  text-decoration: none;
 }
 
-li a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
+.bar {
+  background-color: #444;
 }
 
-li.dropdown {
-  display: inline-block;
+.bar h2,
+.bar p {
+  color: white;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+/*********************************************/
+/********* Rows, columns, and containers *****/
+/*********************************************/
+
+.column {
+  float: left;
+  width: 33%;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-/********* Classes / main content ************/
 .container {
-  width: 90%;
+  width: 85%;
   margin: auto;
 }
 
-.category {
-  border: 1px solid gray;
-  border-radius: 50px;
-  display: inline-block;
-  width: 300px;
-  max-width: 300px;
-  height: 300px;
-  max-height: 300px;
-  padding: 25px;
-}
 
+/*********************************************/
+/************* Main content ******************/
+/*********************************************/
+
+/* Remember <a> is the parent of this img.
+This resizes <a> to what we want the image size to be,
+then the image takes up 100% of the <a> */
+.category a {
+  display: block;
+  width: 80%;
+  max-width: 375px;
+  margin: 0 auto;
+}
 .categoryImage {
   display: block;
-  width: 90%;
-  margin: auto; 
+  width: 100%;
 }
+/* ^^^^^ These two go together ^^^^^^^^^ */
 
 .category p {
-  font-size: 25px;
+  font-size: 1.8vw;
   text-align: center;
+  margin-top: 0;
 }
 
 .productBox {
@@ -93,8 +72,9 @@ li.dropdown {
   padding: 25px;
 }
 
-.img {
+.productImage {
   display: block;
   width: 60%;
+  max-width: 100px;
   margin: auto;
 }
