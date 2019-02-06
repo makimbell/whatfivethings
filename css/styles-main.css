@@ -20,21 +20,15 @@ h1 {
 /*********************************************/
 
 .column {
-  float: left;
-  width: 33%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  float: center;
+  width: 90%;
+  margin: auto;
 }
 
 .container {
   width: 85%;
-  margin: auto;
+  margin: 0 auto;
 }
-
 
 /*********************************************/
 /************* Main content ******************/
@@ -42,7 +36,7 @@ h1 {
 
 /* Remember <a> is the parent of this img.
 This resizes <a> to what we want the image size to be,
-then the image takes up 100% of the <a> */
+then the image takes up 100% of the <a> because it is a child*/
 .category a {
   display: block;
   width: 80%;
@@ -56,25 +50,43 @@ then the image takes up 100% of the <a> */
 /* ^^^^^ These two go together ^^^^^^^^^ */
 
 .category p {
-  font-size: 1.8vw;
+  font-size: 5vw;
   text-align: center;
   margin-top: 0;
 }
 
-.productBox {
-  border: 1px solid gray;
-  border-radius: 50px;
-  display: inline-block;
-  width: 400px;
-  max-width: 400px;
-  height: 400px;
-  max-height: 400px;
-  padding: 25px;
-}
+/* .productBox { */
+  /* border: 1px solid gray; */
+  /* border-radius: 50px; */
+  /* display: inline-block; */
+  /* width: 400px; */
+  /* max-width: 400px; */
+  /* height: 400px; */
+  /* max-height: 400px; */
+  /* padding: 25px; */
+/* } */
 
-.productImage {
-  display: block;
-  width: 60%;
-  max-width: 100px;
-  margin: auto;
+/* .productImage { */
+  /* display: block; */
+  /* width: 60%; */
+  /* max-width: 100px; */
+  /* margin: auto; */
+/* } */
+
+/*********************************************/
+/************* Media queries *****************/
+/*********************************************/
+
+@media (min-width: 600px) {
+  
+  /* 3 columns on larger windows */
+  .column {
+    float: left;
+    width: 33%;
+  }
+  
+  /* Category font size goes from 10px up */
+  .category p {
+  font-size: calc(10px + 1.8vw);
+  }
 }
