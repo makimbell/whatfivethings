@@ -45,7 +45,7 @@ then the image takes up 100% of the <a> because it is a child*/
 }
 .categoryImage {
   display: block;
-  width: 100%;
+  width: 80%;
 }
 /* ^^^^^ These two go together ^^^^^^^^^ */
 
