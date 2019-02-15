@@ -4,10 +4,24 @@
 
 h1 {
   text-align: center;
+  font-family: 'BioRhyme', serif;
+  font-size: 7vw;
+  padding-top: 10px;
 }
 
 .bar {
   background-color: #444;
+}
+
+h2 {
+  font-size: 4vw;
+  font-family: 'BioRhyme', serif;
+  padding-top: 10px;
+}
+
+p {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 12px;
 }
 
 .bar h2,
@@ -25,10 +39,11 @@ h1 {
   margin: auto;
 }
 
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
+/* Do I need this anymore after implementing bootstrap? */
+/* .container { */
+  /* width: 85%; */
+  /* margin: 0 auto; */
+/* } */
 
 /*********************************************/
 /************* Main content ******************/
