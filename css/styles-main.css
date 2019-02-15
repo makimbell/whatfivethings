@@ -50,7 +50,7 @@ then the image takes up 100% of the <a> because it is a child*/
 /* ^^^^^ These two go together ^^^^^^^^^ */
 
 .category p {
-  font-size: 5vw;
+  font-size: 6vw;
   text-align: center;
   margin-top: 0;
 }
@@ -91,6 +91,6 @@ then the image takes up 100% of the <a> because it is a child*/
   
   /* Category font size goes from 10px up */
   .category p {
-  font-size: calc(10px + 1.8vw);
+  font-size: calc(8px + 1.8vw);
   }
 }
