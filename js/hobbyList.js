@@ -4,6 +4,9 @@ var hobbyImg;
 var hobbyP;
 var containerDiv = document.getElementById("hobbyContainer");
 
+/* This is cool, but it's slow. The website would load faster if I just did all
+of this in HTML... */
+
 var hobbyList = [
   {name: "Brewing Beer"},
   {name: "Caligraphy"},
