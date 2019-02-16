@@ -5,23 +5,29 @@ var hobbyP;
 var containerDiv = document.getElementById("hobbyContainer");
 
 var hobbyList = [
-  {name: "Brewing Beer", link: "brewingbeer.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Caligraphy", link: "caligraphy.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Cool Desk Stuff ?", link: "cooldeskstuff.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Geocaching", link: "geocaching.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Guitar", link: "guitar.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Grilling", link: "grilling.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Headphones", link: "headphones.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Hiking", link: "hiking.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Home Workout", link: "homeworkout.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Kites", link: "kites.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Knife Sharpening", link: "knifesharpening.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Mixing Cocktails", link: "mixingcocktails.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Paintballing", link: "paintballing.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Piano", link: "piano.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"},
-  {name: "Photography", link: "photography.html", image: "https://dummyimage.com/250/000000/fff&text=Test+image"}];
+  {name: "Brewing Beer"},
+  {name: "Caligraphy"},
+  {name: "Cool Desk Stuff"},
+  {name: "Geocaching"},
+  {name: "Guitar"},
+  {name: "Grilling"},
+  {name: "Headphones"},
+  {name: "Hiking"},
+  {name: "Home Workout"},
+  {name: "Kites"},
+  {name: "Knife Sharpening"},
+  {name: "Mixing Cocktails"},
+  {name: "Paintball"},
+  {name: "Piano"},
+  {name: "Photography"}];
 
 for (let i=0; i < hobbyList.length; i += 1){
+  /* Fill in "link" and "image" properties of hobbyList */
+  let rawText = hobbyList[i].name.replace(/\s/g, '').toLowerCase()
+  hobbyList[i].link = rawText + ".html";
+  hobbyList[i].image = "img/" + rawText + ".jpg"
+  
+  
   /* Create HTML elements */
   hobbyDiv = document.createElement("div");
   hobbyA = document.createElement("a");
