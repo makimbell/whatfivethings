@@ -33,29 +33,33 @@ p {
 /********* Rows, columns, and containers *****/
 /*********************************************/
 
-.column {
-  float: center;
+.main-container,
+.nav-container {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
-/* Do I need this anymore after implementing bootstrap? */
-/* .container { */
-  /* width: 85%; */
-  /* margin: 0 auto; */
-/* } */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.category {
+  flex-basis: 350px;
+  flex-grow: 1;
+}
 
 /*********************************************/
 /************* Main content ******************/
 /*********************************************/
 
-/* Remember <a> is the parent of this img.
-This resizes <a> to what we want the image size to be,
-then the image takes up 100% of the <a> because it is a child*/
+/* <a> is the parent of the img.
+Resize <a> to what we want the image size to be (80% of div width),
+then the image takes up 100% of the <a> */
 .category a {
   display: block;
-  width: 80%;
-  max-width: 400px;
+  width: 95%;
   margin: 0 auto;
 }
 .categoryImage {
@@ -65,9 +69,9 @@ then the image takes up 100% of the <a> because it is a child*/
 /* ^^^^^ These two go together ^^^^^^^^^ */
 
 .category p {
-  font-size: 6vw;
+  font-size: 4.5vw;
   text-align: center;
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .category img:hover {
@@ -96,13 +100,7 @@ then the image takes up 100% of the <a> because it is a child*/
 /************* Media queries *****************/
 /*********************************************/
 
-@media (min-width: 600px) {
-  
-  /* 3 columns on larger windows */
-  .column {
-    float: left;
-    width: 33%;
-  }
+@media (min-width: 793px) {
   
   /* Category font size goes from 10px up */
   .category p {
