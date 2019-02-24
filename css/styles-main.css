@@ -4,9 +4,10 @@
 
 h1 {
   text-align: center;
-  font-family: 'BioRhyme', serif;
-  font-size: 7vw;
-  padding-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .bar {
@@ -14,18 +15,18 @@ h1 {
 }
 
 h2 {
-  font-size: 4vw;
-  font-family: 'BioRhyme', serif;
+  font-size: 20px;
+  font-family: 'Quicksand', serif;
   padding-top: 10px;
 }
 
 p {
-  font-family: 'Martel Sans', sans-serif;
-  font-size: 12px;
+  font-family: sans-serif;   /*NEED TO FIND ANOTHER FONT FOR THIS*/
+  font-size: 14px;
 }
 
-.bar h2,
-.bar p {
+.nav-container h2,
+.nav-container p {
   color: white;
 }
 
@@ -42,7 +43,7 @@ p {
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .category {
@@ -55,7 +56,7 @@ p {
 /*********************************************/
 
 /* <a> is the parent of the img.
-Resize <a> to what we want the image size to be (80% of div width),
+Resize <a> to what we want the image size to be (95% of div width),
 then the image takes up 100% of the <a> */
 .category a {
   display: block;
@@ -69,9 +70,10 @@ then the image takes up 100% of the <a> */
 /* ^^^^^ These two go together ^^^^^^^^^ */
 
 .category p {
-  font-size: 4.5vw;
+  font-size: 25px;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .category img:hover {
@@ -101,9 +103,36 @@ then the image takes up 100% of the <a> */
 /*********************************************/
 
 @media (min-width: 793px) {
-  
-  /* Category font size goes from 10px up */
+
   .category p {
-  font-size: calc(8px + 1.8vw);
+  font-size: 30px;
+  }
+  
+  h1 {
+  font-size: 72px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  }
+
+
+  h2 {
+    font-size: 32px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  
+  .nav-container {
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  .nav-container,
+  .main-container {
+    width: 1728px; /* 90% of 1920 pixels */
   }
 }
