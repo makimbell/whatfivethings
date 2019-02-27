@@ -1,0 +1,150 @@
+/*********************************************/
+/********* Header and nav bar ****************/
+/*********************************************/
+
+h1 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.bar {
+  background-color: #444;
+}
+
+h2 {
+  font-size: 22px;
+  font-family: 'Quicksand', serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: sans-serif;   /*NEED TO FIND ANOTHER FONT FOR THIS*/
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.nav-container h2,
+.nav-container p {
+  color: white;
+}
+
+/*********************************************/
+/********* Rows, columns, and containers *****/
+/*********************************************/
+
+.main-container,
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  flex-basis: 350px;
+  flex-grow: 1;
+}
+
+/*********************************************/
+/************* Main content ******************/
+/*********************************************/
+
+/* <a> is the parent of the img.
+Resize <a> to what we want the image size to be,
+  which is 95% of the width of the category div
+  and 80% of the height of the category div.
+
+Then, the image takes up 100% of the size of the <a>
+  so that the whole image (and nothing more) is clickable.
+
+The categoryImage is also displayed with object-fit so that
+  each image has the same height after fitting the original pictures
+  to 100% height and width of the <a> */
+.product a {
+  display: block;
+  width: 95%;
+  height: 80%;
+  margin: 0 auto;
+}
+.product img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ^^^^^ These two go together ^^^^^^^^^ */
+
+.product p {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.product img:hover {
+  opacity: 0.7;
+}
+
+/*********************************************/
+/**************** Clearfix *******************/
+/*********************************************/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-table; }
+/* /* Hides from IE-mac \*/ */
+/* * html .clearfix { height: 1%; } */
+/* .clearfix { display: block; } */
+/* /* End hide from IE-mac */ */
+
+/*********************************************/
+/************* Media queries *****************/
+/*********************************************/
+
+@media (min-width: 793px) {
+
+  .product p {
+  font-size: 30px;
+  }
+  
+  h1 {
+  font-size: 72px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  }
+
+
+  h2 {
+    font-size: 34px;
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+  
+  .nav-container {
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  .nav-container,
+  .main-container {
+    width: 1728px; /* 90% of 1920 pixels */
+  }
+}

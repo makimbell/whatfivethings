@@ -27,7 +27,7 @@ var hobbyList = [
 for (let i=0; i < hobbyList.length; i += 1){
   /* Fill in "link" and "image" properties of hobbyList */
   let rawText = hobbyList[i].name.replace(/\s/g, '').toLowerCase()
-  hobbyList[i].link = rawText + ".html";
+  hobbyList[i].link = "pages/" + rawText + ".html";
   hobbyList[i].image = "img/" + rawText + ".jpg"
   
   
