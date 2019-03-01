@@ -35,7 +35,7 @@ for (let i=0; i < hobbyList.length; i += 1){
   hobbyP = document.createElement("p");
   
   /* Modify HTML elements with correct classes and content */
-  hobbyDiv.className = "category column";
+  hobbyDiv.className = "category";
   hobbyA.href = hobbyList[i].link;
   hobbyImg.src = hobbyList[i].image;
   hobbyImg.className = "categoryImage";
