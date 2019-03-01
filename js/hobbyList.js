@@ -4,9 +4,6 @@ var hobbyImg;
 var hobbyP;
 var containerDiv = document.getElementById("hobbyContainer");
 
-/* This is cool, but it's slow. The website would load faster if I just did all
-of this in HTML... */
-
 var hobbyList = [
   {name: "Brewing Beer"},
   {name: "Caligraphy"},
@@ -25,11 +22,11 @@ var hobbyList = [
   {name: "Photography"}];
 
 for (let i=0; i < hobbyList.length; i += 1){
+  
   /* Fill in "link" and "image" properties of hobbyList */
   let rawText = hobbyList[i].name.replace(/\s/g, '').toLowerCase()
   hobbyList[i].link = "pages/" + rawText + ".html";
   hobbyList[i].image = "img/" + rawText + ".jpg"
-  
   
   /* Create HTML elements */
   hobbyDiv = document.createElement("div");

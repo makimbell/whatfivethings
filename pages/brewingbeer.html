@@ -2,20 +2,21 @@
 <html>
 
 <head>
-  <title>What Five Things</title>
+  <title>Brewing Beer</title>
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Montserrat" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
   <!-- My CSS -->
-  <link rel="stylesheet" href="../css/styles-secondary.css">
+  <link rel="stylesheet" href="../css/styles-main.css">
+  <link rel="stylesheet" href="../css/styles-pages.css">
 
 </head>
 
@@ -26,58 +27,33 @@
 <div class="bar">
   <div class="nav-container">
     <h2>Brewing Beer</h2>
+    <p>Paragraph text goes here blah blah blah</p>
   </div>
 </div>
 
-<div class="main-container">
+<div class="main-container" id="hobbyContainer">
 
-  <div class="product column clearfix">
-    <a class="" href="http://amzn.to/1dnQTVg" target="_blank">
-      <img class="" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </a>
-    <h3 class="">Equipment Kit</h3>
-    <p class="">The easiest way to get started is by buying a kit like this one.  It comes with almost everything you need to start brewing your own beer.  The only other things you’ll need for Day 1 are a large stainless steel pot and the actual ingredients to your homebrew.</p>
-  </div>
+<!--
+hobbyList.js populates this area.
+The content looks like this:
 
-  <div class="product column clearfix">
-    <a class="" href="http://amzn.to/1dnQTVg" target="_blank">
-      <img class="" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </a>
-    <h3 class="">Equipment Kit</h3>
-    <p class="">The easiest way to get started is by buying a kit like this one.  It comes with almost everything you need to start brewing your own beer.  The only other things you’ll need for Day 1 are a large stainless steel pot and the actual ingredients to your homebrew.</p>
-  </div>
+<div class='category column'>
+  <a href=link[i]>
+    <img src=image[i]>
+  </a>
+  <p>title[i]</p>
+</div>
 
-  <div class="product column clearfix">
-    <a class="" href="http://amzn.to/1dnQTVg" target="_blank">
-      <img class="" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </a>
-    <h3 class="">Equipment Kit</h3>
-    <p class="">The easiest way to get started is by buying a kit like this one.  It comes with almost everything you need to start brewing your own beer.  The only other things you’ll need for Day 1 are a large stainless steel pot and the actual ingredients to your homebrew.</p>
-  </div>
-
-  <div class="product column clearfix">
-    <a class="" href="http://amzn.to/1dnQTVg" target="_blank">
-      <img class="" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </a>
-    <h3 class="">Equipment Kit</h3>
-    <p class="">The easiest way to get started is by buying a kit like this one.  It comes with almost everything you need to start brewing your own beer.  The only other things you’ll need for Day 1 are a large stainless steel pot and the actual ingredients to your homebrew.</p>
-  </div>
-
-  <div class="product column clearfix">
-    <a class="" href="http://amzn.to/1dnQTVg" target="_blank">
-      <img class="" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </a>
-    <h3 class="">Equipment Kit</h3>
-    <p class="">The easiest way to get started is by buying a kit like this one.  It comes with almost everything you need to start brewing your own beer.  The only other things you’ll need for Day 1 are a large stainless steel pot and the actual ingredients to your homebrew.</p>
-  </div>
-
-  <div class="product column clearfix">
-    <a class="" href="http://amzn.to/1dnQTVg" target="_blank">
-      <img class="" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-    </a>
-    <h3 class="">Equipment Kit</h3>
-    <p class="">The easiest way to get started is by buying a kit like this one.  It comes with almost everything you need to start brewing your own beer.  The only other things you’ll need for Day 1 are a large stainless steel pot and the actual ingredients to your homebrew.</p>
-  </div>
+<div class='category column'>
+  <a href=link[i]>
+    <img src=image[i]>
+  </a>
+  <p>title[i]</p>
+</div>
+...
+etc
+...
+-->
   
 </div>
 
@@ -86,8 +62,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- My JavaScript -->
-<script src="../js/javascript-secondary.js"></script>
+<!-- My Hobby List (populates main page) -->
+<script src="js/hobbyList.js"></script>
+
+<!-- My Main JavaScript -->
+<script src="js/javascript-main.js"></script>
 
 </body>
 </html>
