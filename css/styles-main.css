@@ -23,7 +23,7 @@ h2 {
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  padding-bottom: 10px;
+  padding: 10px 0 20px 0;
 }
 
 .nav-container h2,
@@ -125,7 +125,6 @@ The categoryImage is also displayed with object-fit so that
   padding-top: 15px;
   padding-bottom: 10px;
   }
-
 
   h2 {
     font-size: 32px;
