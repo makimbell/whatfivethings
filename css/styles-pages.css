@@ -1,14 +1,24 @@
 /**************************/
 /* Reformatting title bar */
 /**************************/
-.bar h2,
-.bar p {
-  display: inline-block;
-  padding: 10px 0 10px 0;
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.bar p {
-  margin: 0 0 0 8%;
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.bar {
+  padding: 15px;
 }
 
 a,
@@ -20,25 +30,25 @@ a:hover {
 /* Content slider */
 /******************/
 #container {
-	width:80%;
-	margin:5px auto;
+	width: 80%;
+	margin: 5px auto;
 }
 
 .description {
-	margin:0;
-	padding:0 35px 0 0;
+	margin: 0;
+	padding: 0 35px 0 0;
 }
 
 #slider {
-	width:100%;
-	height:550px;
-	position:relative;
+	width: 100%;
+	height: 550px;
+	position: relative;
   top: -50px;
-	overflow:hidden;
-	float:left;
-	margin-bottom:100px;
-	border:#666 solid 2px;
-	border-radius:5px;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 100px;
+	border: #666 solid 2px;
+	border-radius: 5px;
 }
 
 #slider img {
@@ -49,50 +59,50 @@ a:hover {
 }
 
 .img1, .img2, .img3, .img4, .img5 {
-	width:100%;
-	margin:0;
-	padding:0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .slide {
-	position:absolute;
-	width:100%;
-	height:100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .slide-copy {
-	position:absolute;
-	bottom:0;
-	left:0;
-	padding:10px 20px 20px 20px;
-	background:7f7f7f;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px 20px 20px 20px;
+	background: 7f7f7f;
 	background: rgba(0,0,0,0.5);
-	width:100%;
-	max-height:30%;
+	width: 100%;
+	max-height: 30%;
 }
 
 #prev, #next {
-	cursor:pointer;
-	z-index:100;
-	background:#666;
-	height:50px;
-	width:50px;
-	display:inline-block;
-	position:relative;
-	top:250px;
-	margin:0;
-	padding:0;
-	opacity:0.7;
+	cursor: pointer;
+	z-index: 100;
+	background: #666;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	position: relative;
+	top: 250px;
+	margin: 0;
+	padding: 0;
+	opacity: 0.7;
 	filter: alpha(opacity=70);
 }
 
 #next {
-	float:right;
+	float: right;
 }
 
 #prev {
-	float:left;
-	left:0;
+	float: left;
+	left: 0;
 }
 
 .arrow-right {
@@ -101,9 +111,9 @@ a:hover {
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;	
 	border-left: 15px solid #fff;
-	position:relative;
-	top:20%;
-	right:-40%;
+	position: relative;
+	top: 20%;
+	right: -40%;
 }
 
 .arrow-left {
@@ -111,10 +121,10 @@ a:hover {
 	height: 0; 
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;	
-	border-right:15px solid #fff; 
-	position:relative;
-	top:20%;
-	left:30%;
+	border-right: 15px solid #fff; 
+	position: relative;
+	top: 20%;
+	left: 30%;
 }
 
 /*****************/
