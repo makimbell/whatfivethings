@@ -14,10 +14,12 @@ h2 {
   margin-bottom: 10px;
 }
 
-.bar {
+.bar,
+footer {
   background-color: #444444;
   padding: 20px 0 20px 0;
   margin-bottom: 15px;
+  color: white;
 }
 
 p {
