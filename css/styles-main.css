@@ -1,5 +1,5 @@
 /*********************************************/
-/********* Header and nav bar ****************/
+/******* Header and nav bar and footer *******/
 /*********************************************/
 
 h1 {
@@ -31,6 +31,16 @@ p {
 
 .nav-container h2,
 .nav-container p {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+footer a {
   color: white;
 }
 
