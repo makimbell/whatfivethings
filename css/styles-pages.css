@@ -28,9 +28,10 @@ h2 {
   padding: 15px;
 }
 
-a,
-a:hover {
-   text-decoration: none;
+i {
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
 
 /******************/

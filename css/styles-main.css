@@ -44,6 +44,11 @@ footer a {
   color: white;
 }
 
+a,
+a:hover {
+   text-decoration: none;
+}
+
 /*********************************************/
 /********* Rows, columns, and containers *****/
 /*********************************************/
