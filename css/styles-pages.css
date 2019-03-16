@@ -62,9 +62,10 @@ i {
 
 #slider img {
   max-width: 100%;
-  max-height: 80vh;
+  max-height: 75vh;
   display: block;
   margin: auto;
+  margin-top: 2vh;
 }
 
 .slide {
