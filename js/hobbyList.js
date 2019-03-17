@@ -6,7 +6,7 @@ var containerDiv = document.getElementById("hobbyContainer");
 
 var hobbyList = [
   {name: "Brewing Beer"},
-  {name: "Caligraphy"},
+  {name: "Calligraphy"},
   {name: "Cool Desk Stuff"},
   {name: "Geocaching"},
   {name: "Guitar"},
