@@ -51,6 +51,8 @@ function prevSlide(){
   
 document.onkeydown = keypress;
 
+// If you press forward or back arrow on keyboard, call the 
+//  prev/next functions
 function keypress(event) {
   var keyDownEvent = event || window.event,
   keycode = (keyDownEvent.which) ? keyDownEvent.which : keyDownEvent.keyCode;
