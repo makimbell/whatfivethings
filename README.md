@@ -7,6 +7,8 @@ This main page of this website lists various hobbies and activities. The user is
 #### Disclaimer
 This website uses Amazon referral links. If an item is purchased through the user's Amazon session through my website, I will receive a small portion of the value of that purchase. Please consider supporting this project in that way if you are planning on making an Amazon purchase.
 
+**Because of the referral links and Amazon images, you may need to disable your ad blocker in order to see the product images.**
+
 #### Hosted Website
 The website is also hosted at the below address (however, this may not be the most up-to-date version. The Github version will be the most recent version):
 
