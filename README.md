@@ -1,4 +1,4 @@
-# whatfivethings
+# WhatFiveThings
 ## My Code Louisville project
 
 #### Website Summary
