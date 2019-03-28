@@ -1,9 +1,12 @@
+/* Variables */
 var hobbyDiv;
 var HobbyA;
 var hobbyImg;
 var hobbyP;
 var containerDiv = document.getElementById("hobbyContainer");
 
+/* This contains the names of each hobby listed in the main page.
+    The main page content is created from this array */
 var hobbyList = [
   {name: "Brewing Beer"},
   {name: "Calligraphy"},
@@ -21,9 +24,11 @@ var hobbyList = [
   {name: "Piano"},
   {name: "Photography"}];
 
+/* Loop through the above array, creating main page content */
 for (let i=0; i < hobbyList.length; i += 1){
   
-  /* Fill in "link" and "image" properties of hobbyList */
+  /* Fill in "link" and "image" properties of hobbyList,
+      which consist of the hobby name, with spaces removed, plus .html or .img suffix */
   let rawText = hobbyList[i].name.replace(/\s/g, '').toLowerCase()
   hobbyList[i].link = "pages/" + rawText + ".html";
   hobbyList[i].image = "img/" + rawText + ".jpg"

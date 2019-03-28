@@ -1,26 +1,35 @@
-// hide all slides
-$(".slide").hide();
+// This code is for the slider on the secondary pages
+// Slides start out hidden because of CSS. They are shown as the user scrolls through
 
-// options
-var speed = 500; //transition speed - fade
-var autoswitch = false; //auto slider options
-var autoswitch_speed = 5000; //auto slider speed
+// Options
+var speed = 500; // Transition speed - fade
+var autoswitch_speed = 5000; // Auto slider speed
 
-// add first initial active class
+// Add first initial active class
 $(".slide").first().addClass("active");
 
-// show only active class slide
+// Show only active class slide
 $(".active").show();
 
-// Next Event Handler
-$('#next').on('click', nextSlide);  // call function nextSlide
+// If user clicks Next button, call function nextSlide()
+$('#next').on('click', nextSlide);
 
-// Prev Event Handler
-$('#prev').on('click', prevSlide);  // call function prevSlide
+// If user clicks Prev button, call function prevSlide()
+$('#prev').on('click', prevSlide);
 
-// Auto Slider Handler
-if(autoswitch == true){
-  setInterval(nextSlide,autoswitch_speed);// call function and value 4000
+// If the user presses the forward or back arrow on the keyboard,
+//  call the prev/next functions
+document.onkeydown = keypress;
+
+function keypress(event) {
+  var keyDownEvent = event || window.event,
+  keycode = (keyDownEvent.which) ? keyDownEvent.which : keyDownEvent.keyCode;
+  
+  if (keycode == 37) {
+    prevSlide();
+  } else if (keycode == 39) {
+    nextSlide();
+  }
 }
 
 // Switch to next slide
@@ -47,19 +56,4 @@ function prevSlide(){
   $('.oldActive').removeClass('oldActive');
   $('.slide').fadeOut(speed);
   $('.active').fadeIn(speed);
-}
-  
-document.onkeydown = keypress;
-
-// If you press forward or back arrow on keyboard, call the 
-//  prev/next functions
-function keypress(event) {
-  var keyDownEvent = event || window.event,
-  keycode = (keyDownEvent.which) ? keyDownEvent.which : keyDownEvent.keyCode;
-  
-  if (keycode == 37) {
-    prevSlide();
-  } else if (keycode == 39) {
-    nextSlide();
-  }
 }
